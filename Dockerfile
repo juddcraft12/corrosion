@@ -1,6 +1,3 @@
-FROM node:12
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN cd corrosion
 RUN npm install corrosion
-COPY . .
-CMD node index.js
+RUN node index.js
