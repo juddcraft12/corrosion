@@ -1,8 +1,7 @@
 FROM node:12
-
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-RUN ufw allow 80
+RUN npm install corrosion
 COPY . .
-EXPOSE 80
 CMD node index.js
+EXPOSE 8080
