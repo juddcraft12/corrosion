@@ -4,5 +4,5 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 RUN ufw allow 80
 COPY . .
-Expose 80
+EXPOSE 80
 CMD node index.js
