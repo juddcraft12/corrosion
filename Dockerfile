@@ -4,4 +4,4 @@ WORKDIR /usr/src/app
 RUN npm install corrosion
 COPY . .
 CMD node index.js
-EXPOSE 8080
+EXPOSE 80
