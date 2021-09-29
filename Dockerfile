@@ -4,5 +4,3 @@ WORKDIR /usr/src/app
 RUN npm install corrosion
 COPY . .
 CMD node index.js
-EXPOSE 8080
-RUN docker run -p 8080:8080
